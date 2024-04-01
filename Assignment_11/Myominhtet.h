@@ -409,22 +409,7 @@ void inorder(struct T_node* root){
         inorder(root->right);
 
 }
-void preorder(struct T_node* r){
-    if(r==NULL){return;}
-        printf("%d-",r->data);
-        preorder(r->left);
-        preorder(r->right);
 
-}
-void postorder(struct T_node* r){
-    if(r==NULL){
-        return;
-    }
-    postorder(r->left);
-    postorder(r->right);
-    printf("%d_",r->data);
-   // printf("%d_",r->data);
-}
 
 
 #endif //PROGRAMMING_MYOMINHTET_H
